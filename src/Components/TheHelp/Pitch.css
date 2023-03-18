@@ -201,6 +201,10 @@
         bottom: -28rem;
     }
 
+    .services {
+        padding-bottom: 0;
+    }
+
     @media only screen and (max-width: 800px) {
         .pitch {
             flex-direction: column;
