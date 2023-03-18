@@ -1,0 +1,320 @@
+.theNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo span {
+    font-weight: 500;
+}
+
+.theHero {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+    gap: 3rem;
+}
+
+.clientLogos img:nth-child(3) {
+    margin-top: 1rem;
+}
+
+.heroContent {
+    width: 40%;
+    margin: 7rem 0;
+    position: relative;
+}
+
+.heroContent h2 {
+    font-size: 2.3rem;
+
+}
+
+.heroContent p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1.5rem 0 2rem;
+    color: #565656;
+}
+
+.heroBtn {
+    padding: .8rem 1.2rem;
+    border: transparent;
+    text-align: center;
+    border-radius: 1.8rem;
+    background-color: #2639ED;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.heroDots {
+    position: absolute;
+    top: 11rem;
+    left: -2rem;
+    z-index: -99;
+    width: 70%;
+}
+
+.heroAssets {
+    width: 45%;
+    position: relative;
+}
+
+.heroImg {
+    width: 100%;
+    margin: 1rem 0;
+    z-index: 99;
+    position: absolute;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    background: #DAE9FF;
+    position: absolute;
+    top: .95rem;
+    left: -3.5rem;
+}
+
+.otherShape {
+    width: 180px;
+    height: 180px;
+    background: #FFF5DB;
+    border-bottom-right-radius: 80px 80px;
+    position: absolute;
+    bottom: -5rem;
+    right: 2rem;
+}
+
+.client {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.clientText {
+    width: 25%;
+}
+
+.clientText h3 {
+    font-size: 2rem;
+}
+
+.clientText p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #565656;
+}
+
+.clientLogos {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.clientLogos img {
+    width: 10rem;
+}
+
+.menuIcon,
+.CloseIcon {
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    .Header {
+        margin: 0 1rem;
+    }
+
+    .heroImg {
+        top: 25%;
+    }
+
+    .circle {
+        top: 8.52rem;
+    }
+
+    .otherShape {
+        bottom: 1.5rem;
+    }
+
+    .heroDots {
+        top: 13rem;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        position: absolute;
+        right: -200%;
+        top: 4rem;
+        background: #f4fdfff4;
+        z-index: 999;
+        width: 250px;
+        height: 100vh;
+        padding: 5rem 2rem;
+        border-radius: 1.5rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: all .5s ease-in-out;
+    }
+
+    .openMenu {
+        right: 0;
+    }
+
+    .menuIcon,
+    .CloseIcon {
+        display: block;
+    }
+
+    .client {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .clientLogos img {
+        width: 9rem;
+    }
+
+    .clientLogos img:nth-child(3) {
+        margin-top: 1rem;
+    }
+
+    .clientText p {
+        font-size: 1.5rem;
+        margin: .5rem 0;
+    }
+
+    .clientText {
+        width: 65%;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .theNav {
+            margin: 1rem 0;
+        }
+
+        .theHero {
+            flex-direction: column;
+            margin: 5rem;
+        }
+
+        .menuIcon,
+        .CloseIcon {
+            font-size: 1.5rem;
+        }
+
+        .heroContent {
+            width: 90%;
+            margin: 3rem 0;
+        }
+
+        .heroDots {
+            top: 11rem;
+        }
+
+        .heroAssets {
+            display: none;
+        }
+
+        .client {
+            flex-direction: column;
+            margin: 10rem auto;
+            gap: 1rem;
+        }
+
+        .clientText {
+            width: 80%;
+            margin: auto;
+        }
+
+        .clientLogos {
+            width: auto;
+            margin: auto;
+        }
+
+        .clientLogos img {
+            width: 8rem;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .theHero {
+                margin: 5rem auto;
+            }
+
+            .heroContent {
+                width: 95%;
+                margin: auto;
+            }
+
+            .heroContent h2 {
+                font-size: 1.5rem;
+            }
+
+            .clientText {
+                width: 95%;
+                margin: auto;
+            }
+
+            .clientText p {
+                font-size: 1rem;
+            }
+
+            .clientText h3 {
+                font-size: 1.5rem;
+            }
+
+            .clientLogos img {
+                width: 4rem;
+            }
+
+            .heroDots {
+                top: 10rem;
+            }
+
+            .clientLogos img:nth-child(3) {
+                margin-top: .5rem;
+            }
+
+
+            @media only screen and (max-width: 400px) {
+                .clientLogos img {
+                    width: 3.5rem;
+                }
+
+                .clientText p {
+                    font-size: 1rem;
+                }
+
+                .heroBtn {
+                    font-size: .8rem;
+                }
+
+                .heroContent {
+                    width: 85%;
+                }
+
+            }
+        }
+
+    }
+}

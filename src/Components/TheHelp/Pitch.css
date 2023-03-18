@@ -1,0 +1,290 @@
+.pitch {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 13rem auto;
+    position: relative;
+}
+
+.helpContent {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 15rem;
+    padding-left: 1rem;
+}
+
+.helpContent h2 {
+    font-size: 2.5rem;
+}
+
+.helpContent p {
+    color: #565656;
+}
+
+.services {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem;
+    position: relative;
+}
+
+.theSeconde2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -6rem;
+    right: -7rem;
+}
+
+.theFirst2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0rem;
+
+}
+
+.walletDiv {
+    background: #FFF7E3;
+    width: 4.3rem;
+    border-radius: .7rem;
+}
+
+.analyticsDiv {
+    background: #DEFFEE;
+    width: 4.3rem;
+    border-radius: .7rem;
+}
+
+.codeDiv {
+    background: #FFF2F8;
+    width: 4.3rem;
+    border-radius: .7rem;
+}
+
+.cubeDiv {
+    background: #F1F7FF;
+    width: 4.3rem;
+    border-radius: .7rem;
+}
+
+.analyticsDiv img,
+.codeDiv img,
+.cubeDiv img,
+.walletDiv img {
+    width: 4rem;
+    padding: .3rem .5rem;
+}
+
+.mText {
+    color: #565656;
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+.mTitle {
+    font-size: 1rem;
+}
+
+.wallet,
+.analytics {
+    height: 300px;
+    width: 58%;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    text-align: center;
+    gap: 1.5rem;
+    background: #FFFFFF;
+    border-radius: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.cube,
+.code {
+    height: 300px;
+    width: 55%;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    text-align: center;
+    gap: 1.5rem;
+    background: #FFFFFF;
+    border-radius: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.middleCircle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 10px solid #FF007A;
+    border-radius: 50%;
+    right: 2rem;
+    bottom: -13rem;
+    z-index: -999;
+}
+
+.rectangle {
+    position: absolute;
+    background: #F4F9FF;
+    width: 1000px;
+    height: 550px;
+    border-top-left-radius: 180px 180px;
+    z-index: -99;
+    right: 0;
+    top: 0rem;
+}
+
+.miniRectangle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #FFF5DB;
+    border-top-left-radius: 90px 90px;
+    top: 12.5rem;
+    left: 0rem;
+    z-index: -999;
+}
+
+.pitchDots {
+    position: absolute;
+    bottom: -15rem;
+    left: 0;
+    z-index: -9999;
+}
+
+@media only screen and (max-width: 1050px) {
+    .pitch {
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+    }
+
+    .helpContent {
+        width: 70%;
+        padding-left: 0;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .miniRectangle {
+        left: -1rem;
+    }
+
+    .services {
+        width: auto;
+        padding-bottom: 15rem;
+    }
+
+    .theSeconde2 {
+        top: -5rem;
+    }
+
+    .middleCircle {
+        bottom: -22rem;
+    }
+
+    .pitchDots {
+        bottom: -28rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .pitch {
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .helpContent {
+            margin: auto;
+            width: 80%;
+        }
+
+        .services {
+            width: 80%;
+            margin: auto;
+        }
+
+        .cube,
+        .code,
+        .analytics,
+        .wallet {
+            width: 80%;
+        }
+
+        .middleCircle {
+            right: 5rem;
+            bottom: -1rem;
+        }
+
+        .rectangle,
+        .pitchDots {
+            display: none;
+        }
+
+        .miniRectangle {
+            top: -2rem;
+            left: 2rem;
+        }
+
+        .theFirst2,
+        .theSeconde2 {
+            position: static;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .helpContent {
+                width: 85%;
+                gap: 1rem;
+            }
+
+            .helpContent h2 {
+                font-size: 1.5rem;
+            }
+
+            .miniRectangle {
+                top: -2.5rem;
+                left: 1rem;
+            }
+
+            .services {
+                width: auto;
+                gap: .3rem;
+                margin: 0;
+                padding-bottom: 0;
+            }
+
+            .theFirst2,
+            .theSeconde2 {
+                align-items: center;
+                width: 100%;
+            }
+
+            .code,
+            .cube,
+            .wallet,
+            .analytics {
+                margin: .5rem;
+                padding: 1rem .5rem;
+                height: auto;
+                width: 90%;
+            }
+
+            .middleCircle {
+                right: -1rem;
+            }
+        }
+    }
+}

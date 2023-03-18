@@ -1,0 +1,31 @@
+@import url(//db.onlinewebfonts.com/c/6005d17c8b0c8485d42b35493703ee4d?family=Averta+Demo+PE);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #FEFEFE;
+  font-family: "Averta Demo PE", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  z-index: 1;
+
+}
+
+.App {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+hr {
+  color: rgb(180, 180, 180);
+}

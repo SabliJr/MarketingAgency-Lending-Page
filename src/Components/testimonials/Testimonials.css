@@ -1,0 +1,268 @@
+:root {
+    --offset: -1.4em;
+    --inset: 1.4rem
+}
+
+/* .testiy {
+    max-width: 1280px;
+    margin: auto;
+} */
+
+.testiy h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.testiyP {
+    color: #565656;
+    margin: .5rem;
+    text-align: center;
+}
+
+.testiContent {
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 0;
+}
+
+.testiText {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    width: 60%;
+}
+
+.testiCircle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 10px solid #FF007A;
+    border-radius: 50%;
+    left: 2rem;
+    bottom: 2rem;
+    z-index: -999;
+}
+
+.testiyDots {
+    width: 40%;
+    position: absolute;
+    top: -1rem;
+    left: 12rem;
+    z-index: -999;
+}
+
+.BigImg {
+    width: 25vw;
+    object-fit: cover;
+}
+
+.textDivTest {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateY(20%);
+}
+
+.testiText p {
+    margin: .5rem 0 2rem;
+    color: #565656;
+}
+
+.ScrollDots {
+    width: 12rem;
+}
+
+.picsCircle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #FFF5DB;
+    border-radius: 50%;
+    right: 10rem;
+    bottom: 20%;
+    z-index: -999;
+}
+
+.testiPics {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.testiPics img {
+    position: absolute;
+}
+
+.Img8 {
+    top: 3rem;
+}
+
+
+.Img1 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Img6 {
+    left: 35%;
+    transform: translateX(-60%);
+}
+
+.Img2,
+.Img4 {
+    top: 50%;
+    transform: translateY(-10%);
+}
+
+.Img7 {
+    right: -3rem;
+    transform: translateX(-50%);
+}
+
+.Img5 {
+    right: 0%;
+    transform: translateX(-50%);
+}
+
+.Img7 {
+    top: var(--inset);
+}
+
+.Img5 {
+    bottom: var(--inset);
+}
+
+.Img3 {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+
+.Img1 {
+    top: var(--offset);
+}
+
+.Img2 {
+    right: var(--offset);
+}
+
+.Img6 {
+    bottom: var(--offset);
+}
+
+.Img4 {
+    left: var(--offset);
+}
+
+@media only screen and (max-width: 1050px) {
+    .testiPics {
+        display: none;
+    }
+
+    .testiText {
+        width: 90%;
+        margin: auto;
+    }
+
+    .testiCircle {
+        left: 1rem;
+        bottom: 0.5rem;
+    }
+
+    .testiyDots {
+        left: 1rem;
+    }
+
+    .BigImg {
+        width: 30vw;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .testiContent {
+            margin: 6rem auto;
+            width: 80%;
+            flex-direction: column;
+        }
+
+        .testiText {
+            width: auto;
+        }
+
+        .testiPics {
+            display: none;
+        }
+
+        .BigImg {
+            width: 35vw;
+        }
+
+        .testiyDots {
+            left: 5rem;
+        }
+
+        .testiCircle {
+            left: 1rem;
+            bottom: 0.5rem;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .testiy h2 {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            .testiy {
+                width: auto;
+                margin: auto;
+            }
+
+            .testiContent {
+                width: 100%;
+                margin: 3rem 0;
+            }
+
+            .testiText {
+                gap: .5rem;
+                margin: 0 0.5rem;
+            }
+
+            .textDivTest {
+                transform: none;
+                width: 60%;
+            }
+
+            .BigImg {
+                width: 40%;
+            }
+
+            .testiyDots {
+                left: 5rem;
+                display: none;
+            }
+
+            .testiCircle {
+                left: 1rem;
+                bottom: 0.5rem;
+                display: none;
+            }
+
+            .testiText p {
+                font-size: .8rem;
+            }
+
+            .testiText h3 {
+                font-size: 1rem;
+            }
+
+            .ScrollDots {
+                width: 8rem;
+            }
+
+            .testiyP {
+                margin: .5rem 2rem;
+            }
+        }
+    }
+}

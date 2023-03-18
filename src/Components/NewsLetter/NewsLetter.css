@@ -1,0 +1,209 @@
+.newsSec {
+    margin: 10rem auto;
+    position: relative;
+}
+
+.emailSub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 15rem;
+    text-align: center;
+    background-color: #F4F9FF;
+    border-radius: 5rem;
+    position: relative;
+}
+
+.emailText {
+    padding-left: 4rem;
+}
+
+.subTitle {
+    font-size: 2.2rem;
+}
+
+.subP {
+    color: #565656;
+    margin: .5rem 0;
+}
+
+.inputDiv {
+    background-color: #2639ED;
+    height: 100%;
+    width: 40%;
+    border-radius: 5rem;
+    position: relative;
+}
+
+.inputDiv input {
+    border: none;
+    border-radius: 2rem;
+    color: #565656;
+    padding: 0 1rem;
+    height: 3.5rem;
+    width: 80%;
+    top: 40%;
+    right: 45%;
+    position: absolute;
+    background: #FFFFFF;
+}
+
+.subBtn {
+    background-color: #2639ED;
+    color: white;
+    padding: .5rem .8rem;
+    border: transparent;
+    position: absolute;
+    border-radius: 1rem;
+    top: 45%;
+    right: 50%;
+    cursor: pointer;
+}
+
+.subDots {
+    position: absolute;
+    top: -2rem;
+    right: -8rem;
+    width: 30%;
+    color: #DFEEFF;
+}
+
+.subRectangle {
+    width: 150px;
+    height: 150px;
+    border-left: 2rem solid #FFF5DB;
+    border-bottom: 2rem solid #FFF5DB;
+    border-bottom-left-radius: 104px 104px;
+    position: absolute;
+    bottom: -1.8rem;
+    left: 2.1rem;
+    z-index: -999;
+}
+
+@media only screen and (max-width: 1050px) {
+    .emailSub {
+        flex-direction: column;
+        position: relative;
+        height: 18rem;
+    }
+
+    .inputDiv {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 60%;
+    }
+
+    .emailText {
+        padding-left: 0;
+        margin: 1rem 0;
+    }
+
+    .inputDiv input {
+        height: 4rem;
+        width: 100%;
+        right: 40%;
+    }
+
+    .subBtn {
+        top: 49%;
+        font-size: 1rem;
+    }
+
+    .subRectangle {
+        left: 0.8rem;
+    }
+
+    .subDots {
+        right: -1.5rem;
+        z-index: -999;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .emailSub {
+            flex-direction: column;
+            position: relative;
+            height: 18rem;
+        }
+
+        .inputDiv {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 60%;
+            width: 60%;
+        }
+
+        .emailText {
+            padding-left: auto;
+            margin: 1rem 0;
+        }
+
+        .inputDiv input {
+            height: 4rem;
+            width: 100%;
+            right: 40%;
+        }
+
+        .subBtn {
+            top: 49%;
+            font-size: 1rem;
+        }
+
+        .subRectangle {
+            left: 0.8rem;
+        }
+
+        .subDots {
+            right: -1.5rem;
+            z-index: -999;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .emailSub {
+                width: 100%;
+                border-radius: 0%;
+                height: 15rem;
+            }
+
+            .subRectangle,
+            .subDots {
+                display: none;
+            }
+
+            .emailText {
+                padding-left: 0;
+            }
+
+            .subTitle {
+                font-size: 1.2rem;
+            }
+
+            .subP {
+                margin: 0.5rem 2rem;
+                font-size: .8rem;
+            }
+
+            .inputDiv {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .inputDiv input {
+                height: 3rem;
+                right: .5rem;
+                bottom: 0;
+                width: 95%;
+                border-radius: 1.2rem;
+            }
+
+            .subBtn {
+                top: 44.5%;
+                right: 1.5rem;
+            }
+        }
+    }
+}

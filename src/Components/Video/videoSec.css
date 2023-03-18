@@ -1,0 +1,118 @@
+.videoSec {
+    width: 1280px;
+    margin: 35rem auto 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.video {
+    width: 80%;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+}
+
+.player {
+    position: absolute;
+    z-index: 1000;
+    bottom: 50%;
+    left: 10rem;
+}
+
+.videoRect {
+    width: 150px;
+    height: 150px;
+    background: #DAE9FF;
+    border-bottom-right-radius: 80px 80px;
+    position: absolute;
+    bottom: 50%;
+    right: 35%;
+    z-index: -999;
+}
+
+.videoCircle {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: #FFF5DB;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 39%;
+    z-index: -999;
+}
+
+.videoContent h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.videoContent p {
+    color: #565656;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 1050px) {
+    .videoSec {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .videoRect {
+        bottom: 75%;
+        right: 84%;
+    }
+
+    .videoCircle {
+        left: 70%;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .videoSec {
+            flex-direction: column-reverse;
+            margin: 8rem auto;
+            width: 80%;
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        .videoCircle {
+            bottom: -2.5rem;
+            left: 88%;
+        }
+
+        .videoRect {
+            bottom: 75%;
+            right: 80%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .videoSec {
+                width: 85%;
+            }
+
+            .videoRect {
+                bottom: 72%;
+                right: 60%;
+            }
+
+            .videoContent h2 {
+                font-size: 1.5rem;
+            }
+
+            .videoContent p {
+                margin: 1rem 0;
+                font-size: .9rem;
+            }
+
+            .videoCircle {
+                bottom: -2.8rem;
+                left: 80%;
+            }
+        }
+    }
+}
